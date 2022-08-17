@@ -24,6 +24,7 @@ h5.next = h6;
 h6.next = h;
 let data = new Node(35);
 function insertData(head, data){
+
     let curr = head;
     let prev = null;
 
@@ -34,5 +35,6 @@ function insertData(head, data){
     prev.next = data;
     data.next = curr;
     console.log(head);
+    
 }
 insertData(head,data);

@@ -7,6 +7,7 @@
 // and arr[1] + arr[3] = 5 + 1 = 6.
 
 //let arr = [1, 5, 7, 1], k = 6;
+
 let arr = [1, 1, 1, 1], k = 2;
 
 let mp = new Map();
