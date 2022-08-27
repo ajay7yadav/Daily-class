@@ -178,7 +178,7 @@ maximumAreaOfHistogram(arr)
 // Trapping rain water
 arr =      [3, 0, 0, 2, 0, 4];
 //maxLeft   3  3  3  3  3  4
-//maxRigt   4  4  4  4  4  4  
+//maxRigt   4  4  4  4  4  4
 //         -------------------
 //min B/W   3  3  3  3  3  4
 //  arr     3  0  0  2  0  4

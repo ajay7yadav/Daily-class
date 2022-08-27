@@ -1,40 +1,25 @@
-// Queue
+let s = ["eat","tea","tan","ate","nat","bat"]
 
-// Queue is linear data Stucture
-// it follow FIFO mananer
+s.sort();
+        let obj = {};
+        let ans = [];
+        for(let i=0; i<s.length; i++){
+            let n = s[i].split('');
+            
+            n.sort();
+            let na = n.join('')
+            
+            if(obj[na] == s[i]){
+                ans.push(s[i])
+            }
+            else{
+                //obj[na] = [s[i]];
+                ans.push(s[i])
+            }
+        }
+        // console.log(obj);
+        // for(let i in obj) {
+        // ans.push(obj[i]);
+        // }
 
-// akbvweqfericltsa
-
-class Queue{
-    constructor(){
-        this.queue = [];
-        this.front = -1;
-        this.rear = -1;
-    }
-    isEmpty(){
-        return this.rear == -1;
-    }
-    enqueue(data){
-        //if()
-    }
-    dequeue(){
-
-    }
-    frontAt(){
-
-    }
-    rearAt(){
-
-    }
-}
-
-// function higherOder(fn){
-//     console.log("hello");
-//     fn();
-// }
-// higherOder(function(){
-//     console.log("higher oder");
-// })
-
-// closer are created when ever a function is excute
-
+ console.log(ans);
