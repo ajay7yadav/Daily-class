@@ -56,3 +56,69 @@ s = "repggxrpnrvy", k = 12
 //console.log(uniqueSubsting(s, k));
 
 
+
+
+function inversionOfArr(arr){
+    let mp = new Map()
+}
+//let arr = [2, 4, 1, 3, 5]
+//inversionOfArr(arr)
+
+
+
+
+
+
+function threeSum(arr, X){
+    let ans = 0;
+    for(let i=0; i<arr.length; i++){
+        let l = i+1, r = arr.length-1;
+        while(l < r){
+            let sum = arr[i]+arr[l]+arr[r];
+            let temp = Math.abs(X-sum);
+            if(ans <= temp){
+                ans = sum;
+                r --;
+            }
+            if(ans < temp){
+                l ++;
+            }
+            else r --;
+        }
+    }
+    console.log(ans);
+}
+//let arr = [1, 2, 3, 4, -5], x = 10
+let arr = [6 , -2, -5, 7, -9], x= 3
+//threeSum(arr, x)
+
+
+
+function largestSub0(arr, n){
+    let mp = new Map();
+    let sum = 0;
+    let max = -1;
+    for(let i=0; i<n; i++){
+        sum += arr[i];
+        if(mp.get(sum) == false){
+            mp.set(sum, i);
+        }
+        if(mp.has(sum)){
+            let idx = i-mp.get(sum);
+            max = Math.max(max, idx);
+        }
+    }
+    console.log(max);
+}
+arr = [15,-2,2,-8,1,7,10,23];
+largestSub0(arr, arr.length)
+
+
+
+
+
+
+
+
+
+
